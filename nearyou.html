@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Suggestion Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="robot">
+			<div class="speech-bubble">
+				<p>Hi there! I think you love travelling. Let me suggest a place for you.</p>
+			</div>
+			<button id="location-btn">Allow location</button>
+			<button id="suggest-btn">Suggest me a place</button>
+			<div id="search-bar">
+				<input type="text" placeholder="Search for a place">
+				<button>Search</button>
+			</div>
+			<div id="feedback">
+				<h3>Feedback</h3>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name"><br><br>
+					<label for="comment">Comment:</label>
+					<textarea id="comment" name="comment"></textarea><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<div id="map"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
